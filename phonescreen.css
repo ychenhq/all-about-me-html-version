@@ -174,7 +174,7 @@ a {
   .linkList .info{
     margin-top: 60px;
     background-image: url(./HTML_sketch_export-master/assets/sticker.png);
-    width: 86%;
+    width: 70%;
     margin: auto;
 }
 .infolist{
@@ -215,7 +215,6 @@ a {
   width: 100%;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
   border-radius: 6px;
-  margin: 5%;
 }
   .imgContainer {
     display: flex;
