@@ -1,0 +1,507 @@
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+/*header*/
+.header {
+    background: url(HTML_sketch_export-master/assets/img-headerShape.jpg);
+    height: 500px;
+    width:fit-content;
+    margin-bottom: 130px;
+  }
+  .photo, .textbox, .linkList{
+      flex-direction: column;
+  }
+  .header .photo {
+    align-items: center;
+    margin-top: 90px;
+    margin-left: 25%;
+    width: 280px;
+    height: 220px;
+  }
+  .header .textbox{
+    text-align: center;
+  }
+  .header .textbox h1 {
+    font-size: 42px;
+    padding: 5px;
+
+  }
+  .header .textbox h7 {
+    font-size: 32px;
+    padding: 7px;
+  }
+  .header .textbox h6 {
+    color: #4a4a4a;
+    font-family: 'Alegreya', serif;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .Contacts h2{
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    color: rgb(110, 94, 94);
+    font-size: 44px;
+    padding: 4px;
+    margin-top: 100px;
+  }
+  .linkList .info{
+    margin-top: 60px;
+    background-image: url(./HTML_sketch_export-master/assets/sticker.png);
+    width: 86%;
+    margin: auto;
+}
+.infolist{
+    width: 90%;
+    height: 400px;
+    justify-content: center;
+    margin-left:19%;
+    border-radius: 6px;
+
+}
+  .infolist img {
+    align-content: center;
+    margin-top:20px;
+    width: 10%;
+    height: 20%;
+    max-width: 20%;
+  }
+  .linkList a {
+    margin: 15px 0px 15px 12px;
+    color: black;
+    font-size: 16px;
+    font-family: 'Alegreya', serif;
+  }
+
+  /*skills*/
+.content{
+    margin-top: 700px;
+    display: block;
+}
+  .skillbox {
+    padding: 0px 70px 0px 70px;
+    color: #4a4a4a;
+    margin-bottom: 56px;
+  }
+  .skill1,
+.skill2
+ {
+  width: 100%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  margin: 5%;
+}
+  .imgContainer {
+    display: flex;
+  }
+  .skills h2 {
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    color: rgb(110, 94, 94);
+    font-size: 44px;
+    padding: 4px;
+    margin-bottom: 48px;
+  }
+  .skillbox .imgContainer {
+    justify-content: center;
+    align-items: center;
+    height: 129px;
+  }
+  .skillbox h4 {
+    font-family: MicrosoftJhengHeiRegular;
+    padding: 3px;
+    font-size: 22px;
+    color: #4a4a4a;
+    text-align: center;
+    margin-bottom: 26px;
+  }
+  .disc {
+    list-style: disc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    color: #4a4a4a;
+    margin: 0px 0px 30px 40px;
+    line-height: 14px;
+    line-height: normal;
+  }
+
+  /*Merit*/
+.Merit{
+    margin-top: 150px;
+  }
+  .achieve{
+    display: flex;
+    flex-direction: column;
+  }
+  .achieve .imgContainer {
+    justify-content: center;
+    align-items: center;
+    height: 129px;
+  }
+  .Merit h4{
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    color: rgb(110, 94, 94);
+    font-size: 34px;
+    padding: 4px;
+    margin-bottom: 48px;
+    margin-top: 100px;
+  }
+  .results{
+    border-radius: 6px;
+    margin: 0px 8.5px 0px 8.5px;
+  }
+  .results{
+    width:65%;
+    list-style:armenian;
+    margin: 20%;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height:normal;
+  }
+
+  /*experience*/
+.experience h2 {
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    color: rgb(110, 94, 94);
+    font-size: 44px;
+    padding: 4px;
+    margin-bottom: 26px;
+    
+  }
+  .experience {
+    position: relative;
+    margin-bottom: 56px;
+    margin-top: 180px;
+  }
+.startdot img{
+    display:none;
+  }
+  .experience .phonestart{
+    position: absolute;
+    margin-left: 47%;
+
+  }
+  .experience .line {
+    width: 2px;
+    height: 1200px;
+    background:gray;
+    margin: auto;
+  }
+  .experience .endtime {
+    width: 46px;
+    height: 4px;
+    margin: auto;
+    background: #d8d8d8;
+    border-radius: 2px;
+    margin-bottom: 56px;
+  }
+  .experienceContent {
+    display: flex;
+    margin: 7px 0px 7px 0px;
+  }
+  .experienceContent img {
+    width: 100px;
+    height: 100px;
+  }
+  .exp1 img, .exp2 img, .exp3 img, .exp4 img,.exp5 img{
+      display: none;
+  }
+  .experienceContent .ambassador {
+      position: absolute;
+      top: 160px;
+    border: 3px solid #c0a83c;
+    border-radius: 20px;
+    width: 170px;
+    padding: 8px 9px 12px 12px;
+    margin-left: 5%;
+  }
+  .experienceContent .Tramways {
+    position: absolute;
+    top: 360px;
+    border: 3px solid #77c231;
+    border-radius: 15px;
+    width: 170px;
+    padding: 8px 9px 12px 12px;
+    margin-left: 55%;
+  }
+  .experienceContent .STA {
+    position: absolute;
+    top: 560px;
+    border: 3px solid #915d1152;
+    border-radius: 25px;
+    width: 170px;
+    padding: 8px 9px 12px 12px;
+    margin-left: 5%;
+  }
+  .experienceContent .Competition {
+    position: absolute;
+    top: 750px;
+    border: 3px solid #4bacdab7;
+    border-radius: 25px;
+    width: 170px;
+    padding: 8px 9px 12px 12px;
+    margin-left: 55%;
+  }
+  .experienceContent .Tutor {
+    position: absolute;
+    top: 1000px;
+    border: 3px solid #da7df7;
+    border-radius: 25px;
+    width: 170px;
+    padding: 8px 9px 12px 12px;
+    margin-left: 5%;
+  }
+  
+  .experienceContent .when {
+    font-family: MicrosoftJhengHeiBold;
+    font-size: 16px;
+    color: #4a4a4a;
+    letter-spacing: 0.53px;
+    margin-bottom: 10px;
+  }
+  .experienceContent .who {
+    font-family: MicrosoftJhengHeiBold;
+    font-size: 16px;
+    color: #8a1737;
+    letter-spacing: 0.53px;
+    margin-bottom: 12px;
+  }
+  .experienceContent .where {
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    color: #4a4a4a;
+    letter-spacing: 0.53px;
+    margin-bottom: 10px;
+  }
+  .experienceContent p {
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 14px;
+    color: #9b9b9b;
+    letter-spacing: 0.44px;
+    line-height: 18px;
+  }
+  
+
+  /*about*/
+  .about h2 {
+    font-family: 'Crimson Text', serif;
+    color: rgb(110, 94, 94);
+    font-size: 44px;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 48.6px;
+  }
+  .aboutBox img {
+    justify-content: center;
+    width: 350px;
+    height: 465px;
+    margin-left: 15%;
+  }
+  .aboutBox img, .selfintro{
+      flex-direction: column;
+  }
+  .selfintro{
+      margin: 15%;
+      letter-spacing: normal;
+      line-height: normal;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+  /*works*/
+.works h2 {
+    font-family: 'Crimson Text', serif;
+    color: rgb(110, 94, 94);
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 46px;
+    margin-top: 90px;
+  }
+  .worksBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+    padding: 0px 62px 0px 62px;
+    margin-bottom: 98.4px;
+  }
+  .worksBox li {
+    width: 90%;
+    border-radius: 4px;
+    margin: 0px 8px 0px 8px;
+  }
+  
+  .worksBox li:hover {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  .worksBox h4 {
+    font-family: MicrosoftJhengHeiBold;
+    font-size: 17px;
+    color: #000000;
+    font-weight: bold;
+    margin: 9px 8px 7px 8px;
+  }
+  .worksBox p {
+    font-family: MicrosoftJhengHeiRegular;
+    font-size: 16px;
+    color: #4a4a4a;
+    margin: 0px 8px 9px 0px;
+    padding: 7px;
+  }
+  .bg1,
+  .bg2,
+  .bg3 {
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+  }
+  .worksBox .bg1 {
+    background: rgba(33, 105, 153, 0.199);
+    height: 150px;
+  }
+  .worksBox .bg2 {
+    background: #424242;
+  }
+  .worksBox .bg3 {
+    background: #c3e5f5b6;
+  }
+
+  /*footer*/
+.footer {
+    background-image: url(./HTML_sketch_export-master/assets/img-Looper-bg.png);
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+    text-align: center;
+    font-family: MicrosoftJhengHeiRegular;
+  }
