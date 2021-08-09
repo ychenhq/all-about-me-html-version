@@ -139,7 +139,8 @@ a {
       flex-direction: column;
   }
   .header .photo {
-    align-items: center;
+    align-content: center;
+    margin-left: 20%;
     margin-top: 90px;
     width: 50%;
     height: auto;
@@ -180,12 +181,13 @@ a {
     width: 100%;
     height: 400px;
     justify-content: center;
+    margin-left: 20%;
     border-radius: 6px;
 
 }
   .infolist img {
     align-content: center;
-    margin-top:20px;
+    margin-top:15px;
     width: 10%;
     height: 20%;
     max-width: 20%;
@@ -420,9 +422,9 @@ a {
   }
   .aboutBox img {
     justify-content: center;
-    width: 350px;
-    height: 465px;
-    margin-left: 15%;
+    width: 70%;
+    height: auto;
+    margin:10%;
   }
   .aboutBox img, .selfintro{
       flex-direction: column;
@@ -447,7 +449,7 @@ a {
   .worksBox {
     display: flex;
     flex-direction: column;
-    justify-content: ;
+    justify-content: center;
     padding: 0px 62px 0px 62px;
     margin-bottom: 98.4px;
   }
