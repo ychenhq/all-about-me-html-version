@@ -143,96 +143,64 @@ a {
 /*header*/
 .header {
     background: url(HTML_sketch_export-master/assets/img-headerShape.jpg);
-    height: 600px;
-    width:fit-content;
+    height: 700px;
+    width: 100%;
     margin-bottom: 130px;
-  }
-  .photo, .textbox, .linkList{
-      flex-direction: column;
+    position: relative;
   }
   .header .photo {
-    align-content: center;
-    margin-left: 25%;
-    margin-top: 90px;
-    width: 50%;
-    height: auto;
+    position: absolute;
+    left: 10%;
+    top: 200px;
+    width: 280px;
+    height: 220px;
   }
-  .header .textbox{
+  .header .textbox {
+    position: absolute;
+    left: 8%;
+    top: 400px;
     text-align: center;
   }
   .header .textbox h1 {
     font-size: 42px;
     padding: 10px;
-
   }
   .header .textbox h7 {
     font-size: 32px;
     padding: 10px;
-    margin-bottom: 20px;
   }
   .header .textbox h6 {
     color: #4a4a4a;
-    font-family:'Alegreya', serif;
+    font-family: 'Alegreya', serif;
     font-size: 16px;
-    line-height: 30px;
     padding: 10px;
   }
-  .Contacts h2{
-    text-align: center;
-    font-family: 'Crimson Text', serif;
-    color: rgb(110, 94, 94);
-    font-size: 44px;
-    padding: 4px;
-    margin-top: 100px;
+  .linkList {
+    position: absolute;
+    left: 50%;
+    top: 315px;
   }
-  .linkList .info{
-    margin-top: 60px;
-    background-image: url(./HTML_sketch_export-master/assets/sticker.png);
-    width: 90%;
-}
-.infolist{
-    width: 85%;
-    height: 400px;
-    justify-content: center;
-    margin-left: 20%;
-    border-radius: 6px;
-
-}
-  .infolist img {
-    align-content: center;
-    margin-top:15px;
+  .Contacts h2 {
+    display: none;
+  }
+  .linkList li {
+    display: flex;
+    align-items: center;
+  }
+  .linkList img {
     width: 10%;
     height: 20%;
-    max-width: 20%;
+    max-width: 15%;
   }
   .linkList a {
     margin: 15px 0px 25px 12px;
     color: black;
     font-size: 16px;
-    font-family: 'Alegreya', serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-
-  /*skills*/
-.content{
-    margin-top: 700px;
-    display: block;
-}
-  .skillbox {
-    padding: 0px 70px 0px 70px;
-    color: #4a4a4a;
-    margin-bottom: 56px;
-  }
-  .skill1,
-.skill2
- {
-  width: 100%;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
-}
-  .imgContainer {
-    display: flex;
-  }
-  .skills h2 {
+  /*content*/
+/*skills*/
+.skills h2 {
     text-align: center;
     font-family: 'Crimson Text', serif;
     color: rgb(110, 94, 94);
@@ -240,6 +208,32 @@ a {
     padding: 4px;
     margin-bottom: 48px;
   }
+  .skillbox {
+    display: flex;
+    padding: 0px 60.5px 0px 60.5px;
+    color: #4a4a4a;
+    margin-bottom: 56px;
+  }
+  
+  .skill1,
+  .skill2
+   {
+    width: 50%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    margin: 0px 8.5px 0px 8.5px;
+  }
+  .skill1 {
+    border-bottom: 6px solid #539e43;
+  }
+  .skill2 {
+    border-bottom: 6px solid #9b9b9b;
+  }
+  
+  .imgContainer {
+    display: flex;
+  }
+  
   .skillbox .imgContainer {
     justify-content: center;
     align-items: center;
@@ -263,8 +257,9 @@ a {
     line-height: 14px;
     line-height: normal;
   }
-
-  /*Merit*/
+  
+  
+   /*Merit*/
 .Merit{
     margin-top: 150px;
   }
@@ -291,15 +286,15 @@ a {
     margin: 0px 8.5px 0px 8.5px;
   }
   .results{
-    width:80%;
+    width:70%;
     list-style:armenian;
-    margin: 10%;
+    margin: 20%;
     font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height:normal;
   }
 
-  /*experience*/
+    /*experience*/
 .experience h2 {
     text-align: center;
     font-family: 'Crimson Text', serif;
@@ -312,166 +307,115 @@ a {
   .experience {
     position: relative;
     margin-bottom: 56px;
-    margin-top: 180px;
+    margin-top: 120px;
   }
 .startdot img{
     display:none;
   }
+  .phonestart img{
+    display: none;
+  }
   .linestart img{
-      display: none;
-  }
-  .experience .phonestart{
-    position: absolute;
-    margin-left: 46%;
-
-  }
-  .experience .line {
-    width: 2px;
-    height: 1800px;
-    background:gray;
-    margin: auto;
-  }
-  .experience .endtime {
-    width: 46px;
-    height: 4px;
-    margin: auto;
-    background: #d8d8d8;
-    border-radius: 2px;
-    margin-bottom: 56px;
-  }
-  .experienceContent {
-    display: flex;
-    margin: 7px 0px 7px 0px;
-  }
-  .experienceContent img {
-    width: 100px;
-    height: 100px;
+      width:90%;
+      height:385px;
+      margin:5%;
   }
   .exp1 img, .exp2 img, .exp3 img, .exp4 img,.exp5 img{
-      display: none;
-  }
-  .experienceContent .ambassador {
-      position: absolute;
-      top: 160px;
-    border: 3px solid #c0a83c;
-    border-radius: 20px;
-    width: 30%;
-    padding: 8px 9px 12px 12px;
-    margin-left: 5%;
-  }
-  .experienceContent .Tramways {
+    display: none;
+}
+.experienceContent .ambassador {
     position: absolute;
-    top: 450px;
-    border: 3px solid #77c231;
-    border-radius: 15px;
-    width: 30%;
-    padding: 8px 9px 12px 12px;
-    margin-left: 55%;
-  }
-  .experienceContent .STA {
-    position: absolute;
-    top: 750px;
-    border: 3px solid #915d1152;
-    border-radius: 25px;
-    width: 30%;
-    padding: 8px 9px 12px 12px;
-    margin-left: 5%;
-  }
-  .experienceContent .Competition {
-    position: absolute;
-    top: 1050px;
-    border: 3px solid #4bacdab7;
-    border-radius: 25px;
-    width: 30%;
-    padding: 8px 9px 12px 12px;
-    margin-left: 55%;
-  }
-  .experienceContent .Tutor {
-    position: absolute;
-    top: 1500px;
-    border: 3px solid #da7df7;
-    border-radius: 25px;
-    width: 30%;
-    padding: 8px 9px 12px 12px;
-    margin-left: 5%;
-  }
-  
-  .experienceContent .when {
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    color: #4a4a4a;
-    letter-spacing: 0.53px;
-  }
-  .experienceContent .who {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    color: #8a1737;
-    letter-spacing: 0.53px;
-  }
-  .experienceContent .where {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    color: #4a4a4a;
-    letter-spacing: 0.53px;
-    margin-bottom: 10px;
-  }
-  .experienceContent p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-    color: #9b9b9b;
-    letter-spacing: 0.44px;
-    line-height: 18px;
-  }
-  
+    top: 515px;
+  border: 3px solid #c0a83c;
+  border-radius: 20px;
+  width: 15%;
+  padding: 8px 7px 12px 7px;
+  margin-left: 5%;
+}
+.experienceContent .Tramways {
+  position: absolute;
+  top: 392px;
+  border: 3px solid #77c231;
+  border-radius: 15px;
+  width: 15%;
+  padding: 8px 7px 12px 7px;
+  margin-left: 24%;
+}
+.experienceContent .STA {
+  position: absolute;
+  top: 515px;
+  border: 3px solid #915d1152;
+  border-radius: 25px;
+  width: 15%;
+  padding: 8px 7px 12px 7px;
+  margin-left: 42%;
+}
+.experienceContent .Competition {
+  position: absolute;
+  top: 395px;
+  border: 3px solid #4bacdab7;
+  border-radius: 25px;
+  width: 15%;
+  padding: 8px 7px 12px 7px;
+  margin-left: 61%;
+}
+.experienceContent .Tutor {
+  position: absolute;
+  top: 515px;
+  border: 3px solid #da7df7;
+  border-radius: 25px;
+  width: 15%;
+  padding: 8px 7px 12px 7px;
+  margin-left: 80%;
+}
 
-  /*about*/
-  .about h2 {
-    font-family: 'Crimson Text', serif;
-    color: rgb(110, 94, 94);
-    font-size: 44px;
-    text-align: center;
-    padding: 4px;
-    margin-bottom: 20px;
-  }
-  .aboutBox img {
-    justify-content: center;
-    width: 70%;
-    height: auto;
-    margin:10%;
-    border: 17px solid rgba(128, 112, 145, 0.733);
-    border-left-color: rosybrown;
-    border-right-color: rosybrown;
-    box-shadow: rgba(119, 45, 197, 0.733);
-  }
-  .aboutBox img, .selfintro{
-      flex-direction: column;
-  }
-  .selfintro{
-      margin: 15%;
-      letter-spacing: normal;
-      line-height: normal;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+.experienceContent .when {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  letter-spacing: 0.53px;
+  text-align: center;
+}
+.experienceContent .who {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: #8a1737;
+  letter-spacing: 0.53px;
+  text-align: center;
+}
+.experienceContent .where {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: #4a4a4a;
+  letter-spacing: 0.53px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.experienceContent p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: #9b9b9b;
+  letter-spacing: 0.44px;
+  line-height: 18px;
+  margin-left: 5px;
+}
 
-
-  /*works*/
+/*works*/
 .works h2 {
     font-family: 'Crimson Text', serif;
     color: rgb(110, 94, 94);
     font-size: 44px;
     text-align: center;
     margin-bottom: 46px;
-    margin-top: 90px;
+    margin-top: 450px;
   }
   .worksBox {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 0px 62px 0px 62px;
-    margin-bottom: 98.4px;
+    margin-bottom: 120px;
   }
   .worksBox li {
-    width: 90%;
+    width: 284px;
     border-radius: 4px;
     margin: 0px 8px 0px 8px;
   }
@@ -481,14 +425,14 @@ a {
   }
   
   .worksBox h4 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 17px;
     color: #000000;
     font-weight: bold;
     margin: 9px 8px 7px 8px;
   }
   .worksBox p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 16px;
     color: #4a4a4a;
     margin: 0px 8px 9px 0px;
@@ -512,8 +456,38 @@ a {
     background: #c3e5f5b6;
   }
 
+  /*About*/
+.about h2 {
+    font-family: 'Crimson Text', serif;
+    color: rgb(110, 94, 94);
+    font-size: 44px;
+    text-align: center;
+    padding: 4px;
+    margin-top: 50px;
+    margin-bottom: 48.6px;
+  }
+ 
+  .aboutBox img {
+    width: 50%;
+    height: auto;
+    margin-left:25%;
+
+  }
+  .aboutBox .selfintro {
+    justify-content: center;
+    margin:15%
+    
+  }
+  .aboutBox p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #4a4a4a;
+    line-height: 26px;
+    margin-bottom: 26px;
+  }
+  
   /*footer*/
-.footer {
+  .footer {
     background-image: url(./HTML_sketch_export-master/assets/img-Looper-bg.png);
     margin-top: 50px;
     width: 100%;
@@ -522,3 +496,4 @@ a {
     text-align: center;
     font-family: MicrosoftJhengHeiRegular;
   }
+  

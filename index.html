@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv-website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="phonescreen.css">
-    <link rel="stylesheet" media="screen and (min-width: 1000px)" href="cv-website.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1049px)" href="ipad-screen.css">
+    <link rel="stylesheet" media="screen and (min-width: 1050px)" href="cv-website.css">
+    <link rel="preconnect" media="" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&&family=Crimson+Text:ital,wght@1,700&display=swap"
@@ -112,10 +115,11 @@
             <div class="experience">
                 <h2>Experience</h2>
                 <div class="timeline">
-                    <div class="startdot"><img class="startDot"
-                            src="HTML_sketch_export-master/assets/road-removebg-preview (2).png" alt=""></div>
+                    <div class="startdot"><img class="startDot" src="./HTML_sketch_export-master/assets/road.png"
+                            alt=""></div>
                     <div class="phonestart"><img src="./HTML_sketch_export-master/assets/dot-start.png" alt=""
                             class="phonestart"></div>
+                    <div class="linestart"><img src="./HTML_sketch_export-master/assets/timeline.png" alt=""></div>
                     <div class="line"></div>
                     <div class="endtime"></div>
                 </div>
@@ -137,7 +141,7 @@
                 </div>
                 <div class="experienceContent exp3"><img src="HTML_sketch_export-master/assets/Icon-flag3.svg" alt="">
                     <div class="STA">
-                        <h6 class="when">2020/07 - Present</h6>
+                        <h6 class="when">2021/07 - Present</h6>
                         <h6 class="who">Student Technical Advisor</h6>
                         <h6 class="where">HKUST</h6>
                         <p>Working as student technical advisor to guide and assist future Year 1 students in
@@ -195,7 +199,38 @@
             <div class="about">
                 <h2>About Me</h2>
                 <div class="aboutBox">
-                    <div class="photo"><img src="HTML_sketch_export-master/assets/photo.JPG" alt=""></div>
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="image" src="./HTML_sketch_export-master/assets/photo.JPG" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <img width="600px" class="image" src="./HTML_sketch_export-master/assets/IMG-2371.JPG"
+                                    alt="Volleyball Serve">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./HTML_sketch_export-master/assets/IMG-2373.JPG"
+                                    alt="High School Volleyball Team" class="image">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="image" src="./HTML_sketch_export-master/assets/IMG-2404.JPG"
+                                    alt="Family Photo">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="image" src="./HTML_sketch_export-master/assets/IMG-3487.jpg" alt="Hiking">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                     <div class="selfintro">
                         <p>Year 2 student majoring in Computer Science in Hong Kong University of Science and
                             Technology. Self learnt HTML and
@@ -218,6 +253,10 @@
     <div class="footer">
         <p> <br><br> © 2021 陳宥蓁. ALL RIGHTS RESERVED</p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
